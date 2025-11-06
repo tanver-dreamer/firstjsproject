@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <title>Tanver 2nd Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h2>My API Store</h2>
+        <button class="btn">Sign Up</button>
+    </header>
+
+    <main>
+        <!-- Highlight Section -->
+    <section id = "high-sec-id">
+     <h2>Apple Iphone 13 Pro Max</h2>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou. </p>
+      <div id = "button-now-click">
+        <button class="btn">Buy Now</button>
+      </div>
+    </section>
+
+    <!-- Cover image -->
+   <section id ="cover-image">
+    <img src="./Images/cover-image.png" alt="iphone-image">
+
+   </section>
+
+ <!-- Search secction -->
+  <section id = "search-box-sec">
+    <h2>Search Your Phone</h2>
+
+    <div id = "Search-container">
+        <div id = "search-bar">
+            <i class="fa fa-solid fa-magnifying-glass" ></i>
+            <input id = "search-input-field" type = "text" placeholder="Search Your Phone"/>
+        </div>
+
+        <div id = "search-btn">
+            <button onClick="handlesearch()" class="btn">Search</button>
+
+        </div>
+    </div>
+
+  </section> 
+
+<!-- product load section -->
+ <section id ="load-sec">
+<div id="loader-anim" class="loader hidden"></div>
+ </section>
+
+<!-- Card Section -->
+  <section id="card-section">
+    <!-- Card -->
+    <div class="card">
+
+      <div class = "card-image">
+        <img src="./assets/iphone-img.png"/>
+      </div>
+
+      <h3 class ="card-title">Iphone 13 Pro Max</h3>
+      <p class="card-desc">There are many variations of passages of available, but the majority have suffered </p>
+      <div class="card-price">
+        <span>$</span>
+        <span id="card-item-price">999</span>
+      </div>
+      <div class="card-button">
+        <button class="btn"> Show Details</button>
+
+      </div>
+      
+    </div>
+    <!-- Card -->
+       <div class="card">
+
+      <div class = "card-image">
+        <img src="./assets/iphone-img.png"/>
+      </div>
+
+      <h3 class ="card-title">Iphone 13 Pro Max</h3>
+      <p class="card-desc">There are many variations of passages of available, but the majority have suffered </p>
+      <div class="card-price">
+        <span>$</span>
+        <span id="card-item-price">999</span>
+      </div>
+      <div class="card-button">
+        <button class="btn"> Show Details</button>
+
+      </div>
+      
+    </div>
+    <!-- Card -->
+       <div class="card">
+
+      <div class = "card-image">
+        <img src="./assets/iphone-img.png"/>
+      </div>
+
+      <h3 class ="card-title">Iphone 13 Pro Max</h3>
+      <p class="card-desc">There are many variations of passages of available, but the majority have suffered </p>
+      <div class="card-price">
+        <span>$</span>
+        <span id="card-item-price">999</span>
+      </div>
+      <div class="card-button">
+        <button class="btn"> Show Details</button>
+
+      </div>
+      
+    </div>
+</section>
+
+<!-- show details section-->
+  <section id = "showAll-btn-sec">
+ <button onclick="handleShowAll()" id="showAllBtn" class="btn hidden">Show All Results</button>
+</section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id ="close">&times;</span>
+    <div id="show-detail-container"></div>
+  </div>
+</div>
+    </main>
+
+<!-- footer section -->
+<footer>
+  
+  <!-- Footer section 1 -->
+  <section id = "footer_one">
+     <div>
+          <h2 style="color:#18441f; font-size: 45px; margin-bottom: 10px">My API Store</h2>
+          <p style="color: #706f6f; font-size: 18px; font-weight: 600">
+            Learn How to use API Store
+          </p>
+        </div>
+
+        <div id="footer-social-icons">
+          <a href="#">
+            <i class="fa fa-brands fa-square-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-brands fa-square-x-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-brands fa-square-instagram" aria-hidden="true"></i>
+          </a>
+
+          <button class="btn">Join Premium</button>
+        </div>
+
+  </section>
+
+<!-- horizontal line -->
+      <section id="horizontal-line"></section>
+
+      <!-- footer Nav -->
+      <section id="footer-nav">
+        <div>
+          <a href=""><span>Products</span></a>
+          <a href=""><span>Browse Jobs</span></a>
+          <a href=""><span>Remote Jobs</span></a>
+          <a href=""><span>Company Jobs</span></a>
+          <a href=""><span>Startup Jobs</span></a>
+        </div>
+        <div>
+          <a href=""><span>Products</span></a>
+          <a href=""><span>Browse Jobs</span></a>
+          <a href=""><span>Remote Jobs</span></a>
+          <a href=""><span>Company Jobs</span></a>
+          <a href=""><span>Startup Jobs</span></a>
+        </div>
+        <div style="text-align: left">
+          <a href=""><span>Products</span></a>
+          <a href=""><span>Browse Jobs</span></a>
+          <a href=""><span>Remote Jobs</span></a>
+          <a href=""><span>Company Jobs</span></a>
+          <a href=""><span>Startup Jobs</span></a>
+        </div>
+        <div style="text-align: right">
+          <a href=""><span>Products</span></a>
+          <a href=""><span>Browse Jobs</span></a>
+          <a href=""><span>Remote Jobs</span></a>
+          <a href=""><span>Company Jobs</span></a>
+          <a href=""><span>Startup Jobs</span></a>
+        </div>
+      </section>
+      
+
+</footer>
+
+
+
+<script src="https://kit.fontawesome.com/848266b428.js" crossorigin="anonymous"></script>
+<script src="/mystore.js"></script>
+</body>
+</html>
